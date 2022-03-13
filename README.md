@@ -19,6 +19,8 @@ photoviewは地図中央に近い写真を上部に表示して、撮影位置�
 * QGISのモデル。photoviewスタイルのパラメータを設定・更新します。
 ## PhotoView.qml
 * QGISのスタイルファイル。
+* プロジェクトCRSとレイヤのCRSは同じ投影座標にする必要がある。
+* invisible フィールドがtrueの場合、写真を表示せず、撮影位置はグレー表示となる。invisible フィールドがない場合、及びfalseの場合は写真を表示する。
 # 動作確認
 * QGIS3.16.16,QGIS3.22.4 / Windows10
 # 既知の問題
