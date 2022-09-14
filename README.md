@@ -1,6 +1,7 @@
 # photoview概要
-photoviewは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。
-https://github.com/motohirooya/photoview/blob/main/PHOTOVIEW.PNG
+photoviewは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルで、ジオタグ付写真からレイヤを作成するモデル、パラメータ（プロジェクト変数）を設定するモデルが付属します。
+
+<img src="/PHOTOVIEW.PNG" width="500">
 
 # QGISモデルの使い方
 * モデルの登録 プロセッシングツールボックスパネルの上部の歯車のアイコン→ツールボックスにモデルを追加
@@ -13,11 +14,11 @@ https://github.com/motohirooya/photoview/blob/main/PHOTOVIEW.PNG
 * プロセッシングツールボックスに登録し、「出力のためのレンダリングスタイルを編集」に「PhotoView.qml」を設定する。
 * プロジェクトのCRSを投影座標に設定する。
 ### プロセッシングの処理内容
-* ジオタグ（位置情報）付きの写真でレイヤ作成
-* レイヤの斎藤英でプロジェクトCRSに変換
-* 属性のリファクタリングでinvisibleフィールド（真偽値）追加
+* 「ジオタグ（位置情報）付きの写真」でレイヤ作成
+* 「レイヤの再投影」でプロジェクトCRSに変換
+* 「属性のリファクタリング」でinvisibleフィールド（真偽値）追加
 ## PhotoView_Parameter.model3
-* QGISのモデル。photoviewスタイルのパラメータを設定・更新します。
+* QGISのモデル。photoviewスタイルのパラメータ（モデル変数）を設定・更新します。
 ## PhotoView.qml
 * QGISのスタイルファイル。
 * プロジェクトCRSとレイヤのCRSは同じ投影座標にする必要がある。
