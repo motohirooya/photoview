@@ -2,161 +2,161 @@
 <Option type="Map">
   <Option name="children" type="Map">
     <Option name="native:setprojectvariable_1" type="Map">
-      <Option value="true" name="active" type="bool"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:setprojectvariable" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="native:setprojectvariable" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="613.3333333333333" name="component_pos_x" type="double"/>
-        <Option value="63.66666666666666" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="613.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="63.66666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="プロジェクト変数を設定" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="408" name="component_pos_x" type="double"/>
-      <Option value="136.66666666666666" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="プロジェクト変数を設定" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="408" type="double"/>
+      <Option name="component_pos_y" value="136.66666666666666" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:setprojectvariable_1" name="id" type="QString"/>
+      <Option name="id" value="native:setprojectvariable_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="NAME" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="PhotoView_Number" name="static_value" type="QString"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PhotoView_Number" type="QString"/>
           </Option>
         </Option>
         <Option name="VALUE" type="List">
           <Option type="Map">
-            <Option value="photoviewnumber" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="photoviewnumber" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="native:setprojectvariable_2" type="Map">
-      <Option value="true" name="active" type="bool"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:setprojectvariable" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="native:setprojectvariable" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="594.6666666666666" name="component_pos_x" type="double"/>
-        <Option value="152.33333333333331" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="594.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="152.33333333333331" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="プロジェクト変数を設定" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="394.66666666666663" name="component_pos_x" type="double"/>
-      <Option value="197.33333333333331" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="プロジェクト変数を設定" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="394.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="197.33333333333331" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:setprojectvariable_2" name="id" type="QString"/>
+      <Option name="id" value="native:setprojectvariable_2" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="NAME" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="PhotoView_TopMargin" name="static_value" type="QString"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PhotoView_TopMargin" type="QString"/>
           </Option>
         </Option>
         <Option name="VALUE" type="List">
           <Option type="Map">
-            <Option value="photoviewtopmargin" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="photoviewtopmargin" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
     <Option name="native:setprojectvariable_3" type="Map">
-      <Option value="true" name="active" type="bool"/>
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:setprojectvariable" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="native:setprojectvariable" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="619.3333333333333" name="component_pos_x" type="double"/>
-        <Option value="207" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="619.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="207" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="プロジェクト変数を設定" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="408.66666666666663" name="component_pos_x" type="double"/>
-      <Option value="267.3333333333333" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="プロジェクト変数を設定" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="408.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="267.3333333333333" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:setprojectvariable_3" name="id" type="QString"/>
+      <Option name="id" value="native:setprojectvariable_3" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="NAME" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="PhotoView_PhotoBySideMargin" name="static_value" type="QString"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PhotoView_PhotoBySideMargin" type="QString"/>
           </Option>
         </Option>
         <Option name="VALUE" type="List">
           <Option type="Map">
-            <Option value="photoviewphotobysidemargin" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="photoviewphotobysidemargin" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option name="native:setprojectvariable_5" type="Map">
-      <Option value="true" name="active" type="bool"/>
+    <Option name="native:setprojectvariable_4" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:setprojectvariable" name="alg_id" type="QString"/>
-      <Option value="" name="color" type="QString"/>
+      <Option name="alg_id" value="native:setprojectvariable" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="682" name="component_pos_x" type="double"/>
-        <Option value="170" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="626.6666666666666" type="double"/>
+        <Option name="component_pos_y" value="421.66666666666663" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="プロジェクト変数を設定" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="391.3333333333333" name="component_pos_x" type="double"/>
-      <Option value="409" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
+      <Option name="component_description" value="プロジェクト変数を設定" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="466.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="496.66666666666663" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:setprojectvariable_5" name="id" type="QString"/>
+      <Option name="id" value="native:setprojectvariable_4" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
       <Option name="params" type="Map">
         <Option name="NAME" type="List">
           <Option type="Map">
-            <Option value="2" name="source" type="int"/>
-            <Option value="PhotoView_LabelSize" name="static_value" type="QString"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="PhotoView_SingleByteCaracterWidth" type="QString"/>
           </Option>
         </Option>
         <Option name="VALUE" type="List">
           <Option type="Map">
-            <Option value="photoviewlabelsize" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option name="parameter_name" value="photoview_singlebytecaracterwidth" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
         </Option>
       </Option>
@@ -165,72 +165,73 @@
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
   <Option name="help" type="Map">
-    <Option value="motohirooya" name="ALG_CREATOR" type="QString"/>
-    <Option value="photoviewスタイルのパラメータを設定・更新&#xa;photoviewスタイルは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。" name="ALG_DESC" type="QString"/>
-    <Option value="motohirooya" name="ALG_HELP_CREATOR" type="QString"/>
-    <Option value="2022/2/23 作成&#xa;2022/3/13 ヘルプ記載 " name="ALG_VERSION" type="QString"/>
-    <Option value="" name="HELP_URL" type="QString"/>
-    <Option value="" name="SHORT_DESCRIPTION" type="QString"/>
-    <Option value="ラベルサイズ（mm）&#xa;PhotoView_TopMarginより小さい値を設定する&#xa;ラベルが写真からはみ出る場合は縮小される" name="photoviewlabelsize" type="QString"/>
-    <Option value="写真の枚数" name="photoviewnumber" type="QString"/>
-    <Option value="写真の横幅と余白の比&#xa;画面の横幅、写真枚数とこの値で写真の横幅、余白が決定される" name="photoviewphotobysidemargin" type="QString"/>
-    <Option value="上の余白(mm)" name="photoviewtopmargin" type="QString"/>
+    <Option name="ALG_CREATOR" value="motohirooya" type="QString"/>
+    <Option name="ALG_DESC" value="photoviewスタイルのパラメータ（プロジェクト変数）を設定・更新&#xa;photoviewスタイルは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。" type="QString"/>
+    <Option name="ALG_HELP_CREATOR" value="motohirooya" type="QString"/>
+    <Option name="ALG_VERSION" value="2022/2/23 作成&#xa;2022/3/13 ヘルプ記載 " type="QString"/>
+    <Option name="HELP_URL" value="" type="QString"/>
+    <Option name="SHORT_DESCRIPTION" value="" type="QString"/>
+    <Option name="photoview_singlebytecaracterwidth" value="全角文字に対する半角文字の幅&#xa;ラベルの幅が写真の幅を超える場合は文字を縮小する。その計算に使用する値。&#xa;プロポーショナルフォントは半角の幅が不定で取得できないため、パラメータでせってしている。&#xa;1.0に設定すれば、ラベルが写真の幅を超えることはない。" type="QString"/>
+    <Option name="photoviewlabelsize" value="ラベルサイズ（mm）&#xa;PhotoView_TopMarginより小さい値を設定する&#xa;ラベルが写真からはみ出る場合は縮小される" type="QString"/>
+    <Option name="photoviewnumber" value="写真の枚数" type="QString"/>
+    <Option name="photoviewphotobysidemargin" value="写真の横幅と余白の比&#xa;画面の横幅、写真枚数とこの値で写真の横幅、余白が決定される" type="QString"/>
+    <Option name="photoviewtopmargin" value="上の余白(mm)" type="QString"/>
   </Option>
   <Option name="modelVariables"/>
-  <Option value="PhotoView" name="model_group" type="QString"/>
-  <Option value="PhotoView_Parameter" name="model_name" type="QString"/>
+  <Option name="model_group" value="PhotoView" type="QString"/>
+  <Option name="model_name" value="PhotoView_Parameter" type="QString"/>
   <Option name="parameterDefinitions" type="Map">
-    <Option name="photoviewlabelsize" type="Map">
-      <Option value="1" name="data_type" type="int"/>
-      <Option value="5" name="default" type="double"/>
+    <Option name="photoview_singlebytecaracterwidth" type="Map">
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="0.8" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="PhotoView_LabelSize" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="100" name="max" type="double"/>
+      <Option name="description" value="PhotoView_SingleByteCaracterWidth" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="全角文字に対する半角文字の幅&#xa;ラベルの幅が写真の幅を超える場合は文字を縮小する。その計算に使用する値。&#xa;プロポーショナルフォントは半角の幅が不定で取得できないため、パラメータでせってしている。&#xa;1.0に設定すれば、ラベルが写真の幅を超えることはない。" type="QString"/>
+      <Option name="max" value="1" type="double"/>
       <Option name="metadata"/>
-      <Option value="1" name="min" type="double"/>
-      <Option value="photoviewlabelsize" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="0.1" type="double"/>
+      <Option name="name" value="photoview_singlebytecaracterwidth" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
     <Option name="photoviewnumber" type="Map">
-      <Option value="0" name="data_type" type="int"/>
-      <Option value="5" name="default" type="double"/>
+      <Option name="data_type" value="0" type="int"/>
+      <Option name="default" value="5" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="PhotoView_Number" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="100" name="max" type="double"/>
+      <Option name="description" value="PhotoView_Number" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="写真の枚数" type="QString"/>
+      <Option name="max" value="100" type="double"/>
       <Option name="metadata"/>
-      <Option value="1" name="min" type="double"/>
-      <Option value="photoviewnumber" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="1" type="double"/>
+      <Option name="name" value="photoviewnumber" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
     <Option name="photoviewphotobysidemargin" type="Map">
-      <Option value="1" name="data_type" type="int"/>
-      <Option value="15" name="default" type="double"/>
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="15" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="PhotoView_PhotoBySideMargin" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="100" name="max" type="double"/>
+      <Option name="description" value="PhotoView_PhotoBySideMargin" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="写真の横幅と余白の比&#xa;画面の横幅、写真枚数とこの値で写真の横幅、余白が決定される" type="QString"/>
+      <Option name="max" value="100" type="double"/>
       <Option name="metadata"/>
-      <Option value="1" name="min" type="double"/>
-      <Option value="photoviewphotobysidemargin" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="1" type="double"/>
+      <Option name="name" value="photoviewphotobysidemargin" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
     <Option name="photoviewtopmargin" type="Map">
-      <Option value="1" name="data_type" type="int"/>
-      <Option value="6" name="default" type="double"/>
+      <Option name="data_type" value="1" type="int"/>
+      <Option name="default" value="8" type="double"/>
       <Option name="defaultGui" type="invalid"/>
-      <Option value="PhotoView_TopMargin" name="description" type="QString"/>
-      <Option value="0" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="100" name="max" type="double"/>
+      <Option name="description" value="PhotoView_TopMargin" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="max" value="100" type="double"/>
       <Option name="metadata"/>
-      <Option value="1" name="min" type="double"/>
-      <Option value="photoviewtopmargin" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
+      <Option name="min" value="1" type="double"/>
+      <Option name="name" value="photoviewtopmargin" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
     </Option>
   </Option>
   <Option name="parameterOrder" type="StringList">
@@ -241,89 +242,89 @@
     <Option value="photoviewleader" type="QString"/>
   </Option>
   <Option name="parameters" type="Map">
-    <Option name="photoviewlabelsize" type="Map">
-      <Option value="" name="color" type="QString"/>
+    <Option name="photoview_singlebytecaracterwidth" type="Map">
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="299.3333333333333" name="component_pos_x" type="double"/>
-        <Option value="342.3333333333333" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="330" type="double"/>
+        <Option name="component_pos_y" value="469" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="photoviewlabelsize" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="144" name="component_pos_x" type="double"/>
-      <Option value="393.3333333333333" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="photoviewlabelsize" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="photoview_singlebytecaracterwidth" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="158.66666666666666" type="double"/>
+      <Option name="component_pos_y" value="516" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="photoview_singlebytecaracterwidth" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="photoviewnumber" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="310" name="component_pos_x" type="double"/>
-        <Option value="61.66666666666666" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="310" type="double"/>
+        <Option name="component_pos_y" value="61.66666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="photoviewnumber" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="110" name="component_pos_x" type="double"/>
-      <Option value="106.66666666666666" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="photoviewnumber" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="photoviewnumber" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="110" type="double"/>
+      <Option name="component_pos_y" value="106.66666666666666" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="photoviewnumber" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="photoviewphotobysidemargin" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="319.3333333333333" name="component_pos_x" type="double"/>
-        <Option value="193.66666666666666" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="319.3333333333333" type="double"/>
+        <Option name="component_pos_y" value="193.66666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="photoviewphotobysidemargin" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="112.00000000000001" name="component_pos_x" type="double"/>
-      <Option value="238.66666666666666" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="photoviewphotobysidemargin" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="photoviewphotobysidemargin" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="112.00000000000001" type="double"/>
+      <Option name="component_pos_y" value="238.66666666666666" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="photoviewphotobysidemargin" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
     <Option name="photoviewtopmargin" type="Map">
-      <Option value="" name="color" type="QString"/>
+      <Option name="color" value="" type="QString"/>
       <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="276" name="component_pos_x" type="double"/>
-        <Option value="117" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="276" type="double"/>
+        <Option name="component_pos_y" value="117" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="photoviewtopmargin" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="116.66666666666666" name="component_pos_x" type="double"/>
-      <Option value="168" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="photoviewtopmargin" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="component_description" value="photoviewtopmargin" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="116.66666666666666" type="double"/>
+      <Option name="component_pos_y" value="168" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="photoviewtopmargin" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
   </Option>
 </Option>
