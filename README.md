@@ -1,5 +1,6 @@
 # photoview概要
 photoviewは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。
+https://github.com/motohirooya/photoview/blob/main/PHOTOVIEW.PNG
 
 # QGISモデルの使い方
 * モデルの登録 プロセッシングツールボックスパネルの上部の歯車のアイコン→ツールボックスにモデルを追加
