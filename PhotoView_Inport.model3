@@ -1,241 +1,330 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option type="Map" name="children">
-    <Option type="Map" name="native:importphotos_1">
-      <Option value="true" type="bool" name="active"/>
+  <Option name="children" type="Map">
+    <Option name="native:fieldcalculator_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:importphotos" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="362.66666666666663" type="double" name="component_pos_x"/>
-        <Option value="227.66666666666663" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:fieldcalculator" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="370.5" type="double"/>
+        <Option name="component_pos_y" value="404.5" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="ジオタグ（位置情報）付きの写真" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="162.66666666666666" type="double" name="component_pos_x"/>
-      <Option value="272.66666666666663" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="フィールド計算機relpath" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="208.5" type="double"/>
+      <Option name="component_pos_y" value="337.5" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:importphotos_1" type="QString" name="id"/>
+      <Option name="id" value="native:fieldcalculator_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="FOLDER">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELD_LENGTH" type="List">
           <Option type="Map">
-            <Option value="Folder" type="QString" name="parameter_name"/>
-            <Option value="0" type="int" name="source"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="RECURSIVE">
+        <Option name="FIELD_NAME" type="List">
           <Option type="Map">
-            <Option value="Recursive" type="QString" name="parameter_name"/>
-            <Option value="0" type="int" name="source"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="relpath" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_PRECISION" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="2" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FORMULA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="/*&#xd;&#xa;&quot;photo&quot;がプロジェクトフォルダの下位の場合は、相対パスを返す。&#xd;&#xa;そうでない場合はnullを返す&#xd;&#xa;*/&#xd;&#xa;with_variable('st',replace( &quot;photo&quot; , '\\','/'),&#xd;&#xa;with_variable('bf',replace( @project_folder , '\\','/')  || '/',&#xd;&#xa;with_variable('rp',replace(@st,@bf,''),&#xd;&#xa;if (@rp  &lt;>  @st , @rp , null)&#xd;&#xa;)))" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:importphotos_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:refactorfields_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:importphotos_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:refactorfields" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="746" type="double" name="component_pos_x"/>
-        <Option value="521.6666666666666" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:importphotos" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="362.66666666666663" type="double"/>
+        <Option name="component_pos_y" value="227.66666666666663" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="属性のリファクタリング" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="358.66666666666663" type="double" name="component_pos_x"/>
-      <Option value="476.66666666666663" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="ジオタグ（位置情報）付きの写真" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="162.66666666666666" type="double"/>
+      <Option name="component_pos_y" value="272.66666666666663" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:refactorfields_1" type="QString" name="id"/>
-      <Option type="Map" name="outputs">
-        <Option type="Map" name="ProjectionJpg">
-          <Option value="native:refactorfields_1" type="QString" name="child_id"/>
-          <Option value="" type="QString" name="color"/>
-          <Option type="Map" name="comment">
-            <Option value="" type="QString" name="color"/>
-            <Option value="" type="QString" name="component_description"/>
-            <Option value="60" type="double" name="component_height"/>
-            <Option value="0" type="double" name="component_pos_x"/>
-            <Option value="0" type="double" name="component_pos_y"/>
-            <Option value="100" type="double" name="component_width"/>
-            <Option value="true" type="bool" name="outputs_collapsed"/>
-            <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="id" value="native:importphotos_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FOLDER" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="Folder" type="QString"/>
+            <Option name="source" value="0" type="int"/>
           </Option>
-          <Option value="ProjectionJpg" type="QString" name="component_description"/>
-          <Option value="30" type="double" name="component_height"/>
-          <Option value="558.6666666666666" type="double" name="component_pos_x"/>
-          <Option value="521.6666666666666" type="double" name="component_pos_y"/>
-          <Option value="200" type="double" name="component_width"/>
-          <Option type="invalid" name="default_value"/>
-          <Option value="false" type="bool" name="mandatory"/>
-          <Option value="ProjectionJpg" type="QString" name="name"/>
-          <Option value="OUTPUT" type="QString" name="output_name"/>
-          <Option value="true" type="bool" name="outputs_collapsed"/>
-          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+        <Option name="RECURSIVE" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="Recursive" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
         </Option>
       </Option>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="FIELDS_MAPPING">
+    </Option>
+    <Option name="native:refactorfields_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:refactorfields" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="746" type="double"/>
+        <Option name="component_pos_y" value="521.6666666666666" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
+      </Option>
+      <Option name="component_description" value="属性のリファクタリング" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="358.66666666666663" type="double"/>
+      <Option name="component_pos_y" value="476.66666666666663" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:refactorfields_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="ProjectionJpg" type="Map">
+          <Option name="child_id" value="native:refactorfields_1" type="QString"/>
+          <Option name="color" value="" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option name="color" value="" type="QString"/>
+            <Option name="component_description" value="" type="QString"/>
+            <Option name="component_height" value="60" type="double"/>
+            <Option name="component_pos_x" value="0" type="double"/>
+            <Option name="component_pos_y" value="0" type="double"/>
+            <Option name="component_width" value="100" type="double"/>
+            <Option name="outputs_collapsed" value="true" type="bool"/>
+            <Option name="parameters_collapsed" value="true" type="bool"/>
+          </Option>
+          <Option name="component_description" value="ProjectionJpg" type="QString"/>
+          <Option name="component_height" value="30" type="double"/>
+          <Option name="component_pos_x" value="558.6666666666666" type="double"/>
+          <Option name="component_pos_y" value="521.6666666666666" type="double"/>
+          <Option name="component_width" value="200" type="double"/>
+          <Option name="default_value" type="invalid"/>
+          <Option name="mandatory" value="false" type="bool"/>
+          <Option name="name" value="ProjectionJpg" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+          <Option name="outputs_collapsed" value="true" type="bool"/>
+          <Option name="parameters_collapsed" value="true" type="bool"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="FIELDS_MAPPING" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option type="List" name="static_value">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="List">
               <Option type="Map">
-                <Option value="&quot;photo&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="photo" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="&quot;photo&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="photo" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;filename&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="filename" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="&quot;filename&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="filename" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;directory&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="directory" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="&quot;directory&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="directory" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;altitude&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="altitude" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="6" type="int" name="type"/>
+                <Option name="expression" value="&quot;altitude&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="altitude" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="6" type="int"/>
+                <Option name="type_name" value="double precision" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;direction&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="direction" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="6" type="int" name="type"/>
+                <Option name="expression" value="&quot;direction&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="direction" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="6" type="int"/>
+                <Option name="type_name" value="double precision" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;rotation&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="rotation" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="2" type="int" name="type"/>
+                <Option name="expression" value="&quot;rotation&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="rotation" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="2" type="int"/>
+                <Option name="type_name" value="integer" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;longitude&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="longitude" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="&quot;longitude&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="longitude" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;latitude&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="latitude" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="&quot;latitude&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="latitude" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="&quot;timestamp&quot;" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="timestamp" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="16" type="int" name="type"/>
+                <Option name="expression" value="&quot;timestamp&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="timestamp" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="16" type="int"/>
+                <Option name="type_name" value="datetime" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="invisible" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="1" type="int" name="type"/>
+                <Option name="expression" value="" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="invisible" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="1" type="int"/>
+                <Option name="type_name" value="boolean" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="label" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="label" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option value="" type="QString" name="expression"/>
-                <Option value="0" type="int" name="length"/>
-                <Option value="relpath" type="QString" name="name"/>
-                <Option value="0" type="int" name="precision"/>
-                <Option value="10" type="int" name="type"/>
+                <Option name="expression" value="relpath" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="relpath" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
               </Option>
             </Option>
           </Option>
         </Option>
-        <Option type="List" name="INPUT">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:reprojectlayer_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="native:reprojectlayer_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:reprojectlayer_1">
-      <Option value="true" type="bool" name="active"/>
+    <Option name="native:reprojectlayer_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
       <Option name="alg_config"/>
-      <Option value="native:reprojectlayer" type="QString" name="alg_id"/>
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="422.66666666666663" type="double" name="component_pos_x"/>
-        <Option value="282.3333333333333" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="alg_id" value="native:reprojectlayer" type="QString"/>
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="422.66666666666663" type="double"/>
+        <Option name="component_pos_y" value="282.3333333333333" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="レイヤの再投影" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="266" type="double" name="component_pos_x"/>
-      <Option value="362.66666666666663" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
+      <Option name="component_description" value="レイヤの再投影" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="312" type="double"/>
+      <Option name="component_pos_y" value="402.66666666666663" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
       <Option name="dependencies"/>
-      <Option value="native:reprojectlayer_1" type="QString" name="id"/>
+      <Option name="id" value="native:reprojectlayer_1" type="QString"/>
       <Option name="outputs"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:importphotos_1" type="QString" name="child_id"/>
-            <Option value="OUTPUT" type="QString" name="output_name"/>
-            <Option value="1" type="int" name="source"/>
+            <Option name="child_id" value="native:fieldcalculator_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="OPERATION">
+        <Option name="OPERATION" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="TARGET_CRS">
+        <Option name="TARGET_CRS" type="List">
           <Option type="Map">
-            <Option value="2" type="int" name="source"/>
-            <Option value="ProjectCrs" type="QString" name="static_value"/>
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="ProjectCrs" type="QString"/>
           </Option>
         </Option>
       </Option>
@@ -243,110 +332,115 @@
   </Option>
   <Option name="designerParameterValues"/>
   <Option name="groupBoxes"/>
-  <Option type="Map" name="help">
-    <Option value="motohirooya" type="QString" name="ALG_CREATOR"/>
-    <Option value="photoviewスタイル用写真インポート&#xa;photoviewスタイルは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。&#xa;&#xa;プロセッシング実行の前準備：&#xa;１．プロセッシングツールボックスに登録し、「出力のためのレンダリングスタイルを編集」に「PhotoView.qml」を設定する。&#xa;２．プロジェクトのCRSを投影座標に設定する。&#xa;プロセッシングの処理内容’&#xa;１．ジオタグ（位置情報）付きの写真でレイヤ作成&#xa;２．レイヤの斎藤英でプロジェクトCRSに変換&#xa;３．属性のリファクタリングでinvisible（真偽値）,label（STRING）フィールド追加&#xa;" type="QString" name="ALG_DESC"/>
-    <Option value="motohirooya" type="QString" name="ALG_HELP_CREATOR"/>
-    <Option value="2022/2/23 作成&#xa;2022/3/13 ヘルプ記載 &#xa;2022/9/23 labelフィールド追加" type="QString" name="ALG_VERSION"/>
-    <Option value="ジオタグ付きjpgを保存しているフォルダ" type="QString" name="Folder"/>
-    <Option value="ジオタグ付きjpgのフォルダ" type="QString" name="GeotagJpg"/>
-    <Option value="" type="QString" name="HELP_URL"/>
-    <Option value="サブフォルダも検索" type="QString" name="Recursive"/>
-    <Option value="" type="QString" name="SHORT_DESCRIPTION"/>
-    <Option value="" type="QString" name="native:refactorfields_1:ProjectionJpg"/>
-    <Option value="サブフォルダも検索" type="QString" name="subfolder"/>
+  <Option name="help" type="Map">
+    <Option name="ALG_CREATOR" value="motohirooya" type="QString"/>
+    <Option name="ALG_DESC" value="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;>&#xa;&lt;html>&lt;head>&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; />&lt;style type=&quot;text/css&quot;>&#xa;p, li { white-space: pre-wrap; }&#xa;&lt;/style>&lt;/head>&lt;body style=&quot; font-family:'MS UI Gothic'; font-size:9pt; font-weight:400; font-style:normal;&quot;>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>photoviewスタイル用写真インポート&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>photoviewスタイルは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルです。&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>プロセッシング実行の前準備：&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>１．プロセッシングツールボックスに登録し、「出力のためのレンダリングスタイルを編集」に「PhotoView.qml」を設定する。&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>２．プロジェクトのCRSを投影座標に設定する。&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>プロセッシングの処理内容’&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>１．ジオタグ（位置情報）付きの写真でレイヤ作成&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>２．レイヤの再投影でプロジェクトCRSに変換&lt;/p>&#xa;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>３．属性のリファクタリングでinvisible（真偽値）,label（STRING）フィールド追加&lt;/p>&#xa;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;>&lt;br />&lt;/p>&lt;/body>&lt;/html>" type="QString"/>
+    <Option name="ALG_HELP_CREATOR" value="motohirooya" type="QString"/>
+    <Option name="ALG_VERSION" value="2022/2/23 作成&#xa;2022/3/13 ヘルプ記載 &#xa;2022/9/23 labelフィールド追加&#xa;2023/1/16 relpathにプロジェクトフォルダからの相対パスを入れる" type="QString"/>
+    <Option name="Folder" value="ジオタグ付きjpgを保存しているフォルダ" type="QString"/>
+    <Option name="GeotagJpg" value="ジオタグ付きjpgのフォルダ" type="QString"/>
+    <Option name="HELP_URL" value="" type="QString"/>
+    <Option name="Recursive" value="サブフォルダも検索" type="QString"/>
+    <Option name="SHORT_DESCRIPTION" value="" type="QString"/>
+    <Option name="native:refactorfields_1:ProjectionJpg" value="" type="QString"/>
+    <Option name="subfolder" value="サブフォルダも検索" type="QString"/>
   </Option>
+  <Option name="internal_version" value="Version1" type="QString"/>
   <Option name="modelVariables"/>
-  <Option value="PhotoView" type="QString" name="model_group"/>
-  <Option value="PhotoView_Inport" type="QString" name="model_name"/>
-  <Option type="Map" name="parameterDefinitions">
-    <Option type="Map" name="Folder">
-      <Option value="1" type="int" name="behavior"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="Folder" type="QString" name="description"/>
-      <Option value="" type="QString" name="extension"/>
-      <Option value="全ファイル (*.*)" type="QString" name="filefilter"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="ジオタグ付きjpgを保存しているフォルダ" type="QString" name="help"/>
+  <Option name="model_group" value="PhotoView" type="QString"/>
+  <Option name="model_name" value="PhotoView_Inport" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="Folder" type="Map">
+      <Option name="behavior" value="1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Folder" type="QString"/>
+      <Option name="extension" value="" type="QString"/>
+      <Option name="filefilter" value="全ファイル (*.*)" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="ジオタグ付きjpgを保存しているフォルダ" type="QString"/>
       <Option name="metadata"/>
-      <Option value="Folder" type="QString" name="name"/>
-      <Option value="file" type="QString" name="parameter_type"/>
+      <Option name="name" value="Folder" type="QString"/>
+      <Option name="parameter_type" value="file" type="QString"/>
     </Option>
-    <Option type="Map" name="Recursive">
-      <Option value="false" type="bool" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="Recursive" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="サブフォルダも検索" type="QString" name="help"/>
+    <Option name="Recursive" type="Map">
+      <Option name="default" value="false" type="bool"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="Recursive" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="サブフォルダも検索" type="QString"/>
       <Option name="metadata"/>
-      <Option value="Recursive" type="QString" name="name"/>
-      <Option value="boolean" type="QString" name="parameter_type"/>
+      <Option name="name" value="Recursive" type="QString"/>
+      <Option name="parameter_type" value="boolean" type="QString"/>
     </Option>
-    <Option type="Map" name="native:refactorfields_1:ProjectionJpg">
-      <Option value="true" type="bool" name="create_by_default"/>
-      <Option value="-1" type="int" name="data_type"/>
-      <Option type="invalid" name="default"/>
-      <Option type="invalid" name="defaultGui"/>
-      <Option value="ProjectionJpg" type="QString" name="description"/>
-      <Option value="0" type="int" name="flags"/>
-      <Option value="" type="QString" name="help"/>
-      <Option name="metadata"/>
-      <Option value="native:refactorfields_1:ProjectionJpg" type="QString" name="name"/>
-      <Option value="sink" type="QString" name="parameter_type"/>
-      <Option value="true" type="bool" name="supports_append"/>
-      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    <Option name="native:refactorfields_1:ProjectionJpg" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="-1" type="int"/>
+      <Option name="default" type="invalid"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option name="description" value="ProjectionJpg" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="help" value="" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option name="_modelChildId" value="native:refactorfields_1" type="QString"/>
+        <Option name="_modelChildOutputName" value="ProjectionJpg" type="QString"/>
+        <Option name="_modelChildProvider" value="native" type="QString"/>
+      </Option>
+      <Option name="name" value="native:refactorfields_1:ProjectionJpg" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_append" value="true" type="bool"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
     </Option>
   </Option>
-  <Option type="StringList" name="parameterOrder">
+  <Option name="parameterOrder" type="StringList">
     <Option value="photoviewnumber" type="QString"/>
     <Option value="photoviewphotobysidemargin" type="QString"/>
     <Option value="photoviewtopmargin" type="QString"/>
     <Option value="photoviewlabelsize" type="QString"/>
     <Option value="photoviewleader" type="QString"/>
   </Option>
-  <Option type="Map" name="parameters">
-    <Option type="Map" name="Folder">
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="366" type="double" name="component_pos_x"/>
-        <Option value="57" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+  <Option name="parameters" type="Map">
+    <Option name="Folder" type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="366" type="double"/>
+        <Option name="component_pos_y" value="57" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Folder" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="166" type="double" name="component_pos_x"/>
-      <Option value="102" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
-      <Option value="Folder" type="QString" name="name"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="component_description" value="Folder" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="166" type="double"/>
+      <Option name="component_pos_y" value="102" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="Folder" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
-    <Option type="Map" name="Recursive">
-      <Option value="" type="QString" name="color"/>
-      <Option type="Map" name="comment">
-        <Option value="" type="QString" name="color"/>
-        <Option value="" type="QString" name="component_description"/>
-        <Option value="60" type="double" name="component_height"/>
-        <Option value="612" type="double" name="component_pos_x"/>
-        <Option value="126.33333333333331" type="double" name="component_pos_y"/>
-        <Option value="100" type="double" name="component_width"/>
-        <Option value="true" type="bool" name="outputs_collapsed"/>
-        <Option value="true" type="bool" name="parameters_collapsed"/>
+    <Option name="Recursive" type="Map">
+      <Option name="color" value="" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option name="color" value="" type="QString"/>
+        <Option name="component_description" value="" type="QString"/>
+        <Option name="component_height" value="60" type="double"/>
+        <Option name="component_pos_x" value="612" type="double"/>
+        <Option name="component_pos_y" value="126.33333333333331" type="double"/>
+        <Option name="component_width" value="100" type="double"/>
+        <Option name="outputs_collapsed" value="true" type="bool"/>
+        <Option name="parameters_collapsed" value="true" type="bool"/>
       </Option>
-      <Option value="Recursive" type="QString" name="component_description"/>
-      <Option value="30" type="double" name="component_height"/>
-      <Option value="412" type="double" name="component_pos_x"/>
-      <Option value="171.33333333333331" type="double" name="component_pos_y"/>
-      <Option value="200" type="double" name="component_width"/>
-      <Option value="Recursive" type="QString" name="name"/>
-      <Option value="true" type="bool" name="outputs_collapsed"/>
-      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option name="component_description" value="Recursive" type="QString"/>
+      <Option name="component_height" value="30" type="double"/>
+      <Option name="component_pos_x" value="412" type="double"/>
+      <Option name="component_pos_y" value="171.33333333333331" type="double"/>
+      <Option name="component_width" value="200" type="double"/>
+      <Option name="name" value="Recursive" type="QString"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
     </Option>
   </Option>
 </Option>
