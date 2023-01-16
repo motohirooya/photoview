@@ -1,8 +1,8 @@
 # photoview概要
-photoviewは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルで、ジオタグ付写真からレイヤを作成するモデル、パラメータ（プロジェクト変数）を設定するモデルが付属します。
+photoviewは地図中央に近い写真を上部に表示して、撮影位置と線で結ぶQGISスタイルで、ジオタグ付写真からレイヤを作成するモデル、パラメータ（プロジェクト変数）を設定するモデルが付属します。qfieldでも動きます。
 
-<img src="/PHOTOVIEW.PNG" width="500">
-<img src="https://user-images.githubusercontent.com/70827688/212680711-8d726485-8e81-488e-9f0f-e53eb02b4a95.png" width="500">
+<img src="/PHOTOVIEW.PNG" width="400">
+<img src="https://user-images.githubusercontent.com/70827688/212680711-8d726485-8e81-488e-9f0f-e53eb02b4a95.png" width="400">
 
 
 # QGISモデルの使い方
