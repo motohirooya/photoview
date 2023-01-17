@@ -163,6 +163,51 @@
             <Option name="source" value="2" type="int"/>
             <Option name="static_value" type="List">
               <Option type="Map">
+                <Option name="expression" value="relpath" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="relpath" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="label" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="10" type="int"/>
+                <Option name="type_name" value="text" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="invisible" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="1" type="int"/>
+                <Option name="type_name" value="boolean" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;timestamp&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="timestamp" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="16" type="int"/>
+                <Option name="type_name" value="datetime" type="QString"/>
+              </Option>
+              <Option type="Map">
+                <Option name="expression" value="&quot;direction&quot;" type="QString"/>
+                <Option name="length" value="0" type="int"/>
+                <Option name="name" value="direction" type="QString"/>
+                <Option name="precision" value="0" type="int"/>
+                <Option name="sub_type" value="0" type="int"/>
+                <Option name="type" value="6" type="int"/>
+                <Option name="type_name" value="double precision" type="QString"/>
+              </Option>
+              <Option type="Map">
                 <Option name="expression" value="&quot;photo&quot;" type="QString"/>
                 <Option name="length" value="0" type="int"/>
                 <Option name="name" value="photo" type="QString"/>
@@ -199,15 +244,6 @@
                 <Option name="type_name" value="double precision" type="QString"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" value="&quot;direction&quot;" type="QString"/>
-                <Option name="length" value="0" type="int"/>
-                <Option name="name" value="direction" type="QString"/>
-                <Option name="precision" value="0" type="int"/>
-                <Option name="sub_type" value="0" type="int"/>
-                <Option name="type" value="6" type="int"/>
-                <Option name="type_name" value="double precision" type="QString"/>
-              </Option>
-              <Option type="Map">
                 <Option name="expression" value="&quot;rotation&quot;" type="QString"/>
                 <Option name="length" value="0" type="int"/>
                 <Option name="name" value="rotation" type="QString"/>
@@ -229,42 +265,6 @@
                 <Option name="expression" value="&quot;latitude&quot;" type="QString"/>
                 <Option name="length" value="0" type="int"/>
                 <Option name="name" value="latitude" type="QString"/>
-                <Option name="precision" value="0" type="int"/>
-                <Option name="sub_type" value="0" type="int"/>
-                <Option name="type" value="10" type="int"/>
-                <Option name="type_name" value="text" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" value="&quot;timestamp&quot;" type="QString"/>
-                <Option name="length" value="0" type="int"/>
-                <Option name="name" value="timestamp" type="QString"/>
-                <Option name="precision" value="0" type="int"/>
-                <Option name="sub_type" value="0" type="int"/>
-                <Option name="type" value="16" type="int"/>
-                <Option name="type_name" value="datetime" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" value="" type="QString"/>
-                <Option name="length" value="0" type="int"/>
-                <Option name="name" value="invisible" type="QString"/>
-                <Option name="precision" value="0" type="int"/>
-                <Option name="sub_type" value="0" type="int"/>
-                <Option name="type" value="1" type="int"/>
-                <Option name="type_name" value="boolean" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" value="" type="QString"/>
-                <Option name="length" value="0" type="int"/>
-                <Option name="name" value="label" type="QString"/>
-                <Option name="precision" value="0" type="int"/>
-                <Option name="sub_type" value="0" type="int"/>
-                <Option name="type" value="10" type="int"/>
-                <Option name="type_name" value="text" type="QString"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" value="relpath" type="QString"/>
-                <Option name="length" value="0" type="int"/>
-                <Option name="name" value="relpath" type="QString"/>
                 <Option name="precision" value="0" type="int"/>
                 <Option name="sub_type" value="0" type="int"/>
                 <Option name="type" value="10" type="int"/>
